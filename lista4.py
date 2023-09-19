@@ -3,7 +3,7 @@ import time
 sair = 0
 
 while sair == 0:
-    time.sleep(0.5)
+    time.sleep(0.8)
 
     print("\n\nExercicios:")
     print("0 - Sair")
@@ -25,6 +25,15 @@ while sair == 0:
     print("16 - ")
     print("17 - ")
     print("18 - ")
+    print("19 - ")
+    print("20 - ")
+    print("21 - ")
+    print("22 - ")
+    print("23 - ")
+    print("24 - ")
+    print("25 - ")
+    print("26 - ")
+    print("27 - ")
 
     escolha = int(input("Executar: "))
 
