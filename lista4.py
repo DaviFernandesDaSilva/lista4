@@ -48,78 +48,178 @@ while sair == 0:
     # QUESTÃO 1 =============================
 
     if escolha == 1:
+        i = 1
+        while i <= 10:
+            i+=1
+            print("Meu curso é Show")
+        
         print("")
     
     # =======================================
     # QUESTÃO 2 =============================
 
     elif escolha == 2:
+        i = int(input("Digite o número de vezes: "))
+        while i >= 1:
+            print("Estou sabendo programar")
+            i-=1
         print("")
     
     # =======================================
     # QUESTÃO 3 =============================
 
     elif escolha == 3:
+        i = 1
+        while i<=100:
+            print(i)
+            i+=1
         print("")
     
     # =======================================
     # QUESTÃO 4 =============================
 
     elif escolha == 4:
+        i = 500
+        while i>=2:
+            print(i)
+            i-=3
         print("")
     
     # =======================================
     # QUESTÃO 5 =============================
 
     elif escolha == 5:
+        num = int(input("Digite um número: "))
+        i = 0
+        while i<=100000:
+            print(i+num)
+            i+=1000
         print("")
     
     # =======================================
     # QUESTÃO 6 =============================
 
     elif escolha == 6:
+        i = 1
+        soma = 0
+        while i<=10:
+            num = int(input("Digite um número: "))
+            soma+=num
+            i+=1
+        print(f"Soma é: {soma}")
+
         print("")
     
     # =======================================
     # QUESTÃO 7 =============================
 
     elif escolha == 7:
+        
+        i = 1
+        soma = 0
+        while i<=10:
+            num = int(input("Digite um número: "))
+            soma+=num
+            i+=1
+        media = int(soma/10)
+        print(f"Média é: {media}")
+
         print("")
     
     # =======================================
     # QUESTÃO 8 =============================
 
     elif escolha == 8:
+
+        i = 1
+        soma = 0
+        negativos = 0
+        while i<=10:
+            num = int(input("Digite um número: "))
+            if num<0:
+                negativos+=1
+            else:
+                soma+=num
+            i+=1
+        media = int(soma/(10-negativos))
+        print(f"Média dos positivos é: {media}")
+
         print("")
     
     # =======================================
     # QUESTÃO 9 =============================
 
     elif escolha == 9:
+
+        i = 1
+        maior = 0
+        menor = 0
+        while i<=10:
+            num = int(input(f"Digite o {i}º número: "))
+            if num>=maior:
+                maior = num
+            elif num<=menor:
+                menor = num                
+            i+=1
+        
+        print(f"O maior número é {maior} e o menor número é {menor}")
+
         print("")
     
     # =======================================
     # QUESTÃO 10 ============================
 
     elif escolha == 10:
+
+        valor = int(input("Digite um número: "))
+        i = 1
+        while i<=valor:
+            print(i)
+            i+=2
         print("")
     
     # =======================================
     # QUESTÃO 11 ============================
 
     elif escolha == 11:
+        i = 1
+        pares = 2
+        soma = 0
+        while i<=50:
+            soma+=pares
+            pares+=2
+            i+=1
+        print('A soma dos 50 primeros números pares é')
+        print(soma)
         print("")
     
     # =======================================
     # QUESTÃO 12 ============================
 
     elif escolha == 12:
-        print("")
-    
+        
+        num = int(input("Digite um número: ") )
+        fat=1
+        i=1
+        while i <= num:
+            fat = fat * i
+            i += 1
+
+        print(f"{num}! é {fat}")
+
     # =======================================
     # QUESTÃO 13 ============================
 
     elif escolha == 13:
+        num = int(input("Digite um número: ") )
+        div = 1
+        print(f"Divisores de {num}")
+        while div<=num:
+            if num%div==0:
+                print(div)
+            div+=1
+
+        
         print("")
     
     # =======================================
