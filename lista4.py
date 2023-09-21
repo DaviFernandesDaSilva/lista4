@@ -1,5 +1,5 @@
-import time
 
+import time
 sair = 0
 
 while sair == 0:
@@ -284,12 +284,69 @@ while sair == 0:
     # QUESTÃO 16 ============================
 
     elif escolha == 16:
+#16. O número de Fibonacci Fn para n > 0 é definido da seguinte maneira:
+#F1 = 1
+#F2 = 1
+#Fn = Fn−1 + Fn−2 para n > 2
+#Faça um programa que receba um valor inteiro n digitado pelo usuário e calcule e Fn.
+
+        n = int(input("Valor de n"))
+        i = 0 
+        fn = 0
+        f2 = 1
+        while i<=n:
+            print(fn)
+            fn+=f2
+            f2+=1
+            i+=1
+
+            
+        print(f"Número final da sequência {fn}")
+
+
+
+
+
+
         print("")
     
     # =======================================
     # QUESTÃO 17 ============================
 
     elif escolha == 17:
+
+#         17. Faça um programa que receba dois números. Calcule e mostre:
+#  A soma dos números pares desse intervalo de números, incluindo os números dados;
+#  A multiplicação dos números ímpares desse intervalo, incluindo os digitados
+        num1 = int(input("Digite o primeiro número: ")) # 10
+        num2 = int(input("Digite o segundo número: "))# 20
+        soma = 0
+        mult = 1
+
+        if num1>num2:
+            i = num2
+            while i<=num1:
+                if(i%2 == 0):
+                    #par
+                    soma+=i
+                else:
+                    #impar
+                    mult*=i
+                i+=1
+        else:
+            i = num1
+            while i<=num2:
+                if(i%2 == 0):
+                    #par
+                    soma+=i
+                else:
+                    #impar
+                    mult*=i
+                i+=1
+
+        print(f"A soma dos pares no intervalo é {soma}")
+        print(f"A soma dos pares no intervalo é {mult}")
+
         print("")
     
     # =======================================
@@ -354,3 +411,4 @@ while sair == 0:
 
     else:
         print("Deus é bom")
+        print("")
