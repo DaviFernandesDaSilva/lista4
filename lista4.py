@@ -226,12 +226,58 @@ while sair == 0:
     # QUESTÃO 14 ============================
 
     elif escolha == 14:
+        #14. Faça um programa que receba um valor inteiro n ≥ 0 e imprima se esse número é primo ou não.
+
+        num = int(input("Digite o número: "))
+        i = 2
+        primo = 0
+
+        while i<num:
+            if num%i==0:
+                primo+=1
+            i+=1
+                
+
+        if primo == 0:
+            print(f"{num} é um número primo")
+        else:
+            print(f"{num} NÃO é um número primo")
+        
+
         print("")
     
     # =======================================
     # QUESTÃO 15 ============================
 
     elif escolha == 15:
+        #15. Escreva um programa que leia certa quantidade de números e imprima o maior deles e quantas vezes
+        # o maior número foi lido. A quantidade de números a serem lidos deve ser fornecida pelo usuário.
+        loop = 0
+        maior = 0
+        menor = 0
+        resp = 0
+        while loop==0:
+
+            print("Digite um número ou 'P' para parar:")
+            resp = input(": ")
+
+            if resp=="P" or resp =="p":
+
+                print(f"O maior número é {maior} e o menor número é {menor}")
+                loop+=1
+
+            else:
+                if int(resp)>maior:
+                    maior = int(resp)
+                else:
+                    menor = int(resp)
+        
+        print("Finalizado")
+                
+
+
+        
+
         print("")
     
     # =======================================
