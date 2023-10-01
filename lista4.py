@@ -152,8 +152,8 @@ while sair == 0:
     elif escolha == 9:
 
         i = 1
-        maior = 0
-        menor = 0
+        maior = float('-inf')
+        menor = float('inf')
         while i<=10:
             num = int(input(f"Digite o {i}º número: "))
             if num>=maior:
